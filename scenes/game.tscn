@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://2p33koccpolt"]
+
+[ext_resource type="PackedScene" uid="uid://cggfj4qn42bq2" path="res://scenes/animal.tscn" id="1_ykda6"]
+[ext_resource type="PackedScene" uid="uid://bvd7qt3goymq0" path="res://scenes/game_manager.tscn" id="2_wbey5"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="GameManager" parent="." instance=ExtResource("2_wbey5")]
+
+[node name="Animal" parent="." instance=ExtResource("1_ykda6")]
+position = Vector2(4, -5)
